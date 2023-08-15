@@ -1,0 +1,15 @@
+D:\Learn\array_tasks_csharp\task002\obj\Debug\net7.0\task002.csproj.AssemblyReference.cache
+D:\Learn\array_tasks_csharp\task002\obj\Debug\net7.0\task002.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learn\array_tasks_csharp\task002\obj\Debug\net7.0\task002.AssemblyInfoInputs.cache
+D:\Learn\array_tasks_csharp\task002\obj\Debug\net7.0\task002.AssemblyInfo.cs
+D:\Learn\array_tasks_csharp\task002\obj\Debug\net7.0\task002.csproj.CoreCompileInputs.cache
+D:\Learn\array_tasks_csharp\task002\bin\Debug\net7.0\task002.exe
+D:\Learn\array_tasks_csharp\task002\bin\Debug\net7.0\task002.deps.json
+D:\Learn\array_tasks_csharp\task002\bin\Debug\net7.0\task002.runtimeconfig.json
+D:\Learn\array_tasks_csharp\task002\bin\Debug\net7.0\task002.dll
+D:\Learn\array_tasks_csharp\task002\bin\Debug\net7.0\task002.pdb
+D:\Learn\array_tasks_csharp\task002\obj\Debug\net7.0\task002.dll
+D:\Learn\array_tasks_csharp\task002\obj\Debug\net7.0\refint\task002.dll
+D:\Learn\array_tasks_csharp\task002\obj\Debug\net7.0\task002.pdb
+D:\Learn\array_tasks_csharp\task002\obj\Debug\net7.0\task002.genruntimeconfig.cache
+D:\Learn\array_tasks_csharp\task002\obj\Debug\net7.0\ref\task002.dll
