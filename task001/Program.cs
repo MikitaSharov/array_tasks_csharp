@@ -59,7 +59,7 @@ int[] GetOddArray(int[] array)
     int oddCount = 0;
     foreach (int item in array)
     {
-        if (item%2==1) oddCount++;
+        if (item % 2 == 1) oddCount++;
     }
 
     int[] oddarray = new int[oddCount];
@@ -67,7 +67,7 @@ int[] GetOddArray(int[] array)
     int index = 0;
     foreach (int item in array)
     {
-        if (item%2==1)
+        if (item % 2 == 1)
         {
             oddarray[index] = item;
             index++;
