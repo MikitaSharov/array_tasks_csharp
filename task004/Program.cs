@@ -1,5 +1,6 @@
 ﻿/* Задан массив действительных чисел из N элементов (используйте генератор случайных чисел).
 Определить количество элементов, значения которых находятся в диапазоне от -100 до +100. */
+
 Console.Write("Введите размер массива: ");
 int arrayRLength = Convert.ToInt32(Console.ReadLine());
 double[] arrayR = FillRandomArray(arrayRLength, -1000, 1000);
@@ -15,7 +16,6 @@ double[] FillRandomArray(int length, double minValue, double maxValue)
 
     return array;
 }
-
 void PrintArray(double[] array)
 {
     Console.Write("[");

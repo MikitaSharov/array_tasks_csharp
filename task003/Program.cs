@@ -13,7 +13,6 @@ int[] FillRandomArray(int length)
 
     return array;
 }
-
 void PrintArray(int[] array)
 {
     Console.Write("[");
