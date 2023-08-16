@@ -1,4 +1,7 @@
-﻿int[] userarray = GetRandomArray(10); //10 - размер массива
+﻿/* Задан одномерный массив целых чисел. Образуйте из него два отсортированных по возрастанию массива,
+содержащих четные и нечетные числа. Подсказка: четное число делится на 2 без остатка. */
+
+int[] userarray = GetRandomArray(10); //10 - размер массива
 int[] evenarray = GetEvenArray(userarray);
 int[] oddarray = GetOddArray(userarray);
 // Метод по заполнению массива.
@@ -25,6 +28,22 @@ void PrintArray(int[] arraytoprint)
     }
     Console.WriteLine("]");
 }
+// Метод для сортировки по возрастанию
+void SortAscending(int[] arrayForSort)
+{
+    for (int i = 0; i < arrayForSort.Length - 1; i++)
+    {
+        for (int j = 0; j < arrayForSort.Length - i - 1; j++)
+        {
+            if (arrayForSort[j] > arrayForSort[j + 1])
+            {
+                int temp = arrayForSort[j];
+                arrayForSort[j] = arrayForSort[j + 1];
+                arrayForSort[j + 1] = temp;
+            }
+        }
+    }
+}
 
 // Метод по заполнению массива чётными значениями из другого массива
 int[] GetEvenArray(int[] array)
@@ -40,16 +59,19 @@ int[] GetEvenArray(int[] array)
     }
     int[] evenarray = new int[evenCount]; //создаём новый массив размером evenCount
 
-    // заполняем новые значения evenarray[index] чётными значениями проверяя каждое значение item входного массива 
+    // заполняем новые значения evenarray[index] чётными значениями проверяя каждое значение array[j] входного массива 
     int index = 0;
-    foreach (int item in array)
+    for (int i = 0; i < array.Length; i++)
     {
-        if (item % 2 == 0)
+        if (array[i] % 2 == 0)
         {
-            evenarray[index] = item;
+            evenarray[index] = array[i];
             index++;
         }
     }
+    // сортируем
+    SortAscending(evenarray);
+
     return evenarray;
 }
 
@@ -73,6 +95,8 @@ int[] GetOddArray(int[] array)
             index++;
         }
     }
+    SortAscending(oddarray);
+
     return oddarray;
 }
 
