@@ -1,19 +1,24 @@
-﻿int[] array = new int[10];
+﻿/* Задан генератором случайных чисел одномерный массив из действительных чисел.
+Найдите максимальное и минимальное число этого массива. */
 
-for (int i = 0; i < array.Length; i++)
+double[] array = FillDoubleArray(10, -100, 100);
+
+double[] FillDoubleArray(int size, double minValue, double maxValue)
 {
-    array[i] = new Random().Next(1, 100);
+    double[] array = new double[size];
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().NextDouble() * (maxValue - minValue) + minValue;
+    }
+
+    return array;
 }
-
-int min = array[0];
-int max = array[0];
-
-void PrintArray(int[] arraytoprint)
+void PrintArray(double[] arraytoprint)
 {
     Console.Write("[");
     for (int i = 0; i < arraytoprint.Length; i++)
     {
-        Console.Write(arraytoprint[i]);
+        Console.Write(Math.Round(arraytoprint[i], 2));
         if (i != arraytoprint.Length - 1)
         {
             Console.Write(", ");
@@ -22,6 +27,8 @@ void PrintArray(int[] arraytoprint)
     Console.WriteLine("]");
 }
 
+double min = array[0];
+double max = array[0];
 for (int i = 0; i < array.Length; i++)
 {
     if (array[i] > max)
@@ -33,6 +40,7 @@ for (int i = 0; i < array.Length; i++)
         min = array[i];
     }
 }
+
 PrintArray(array);
-Console.WriteLine(max);
-Console.Write(min);
+Console.WriteLine(Math.Round(max, 2));
+Console.Write(Math.Round(min, 2));
